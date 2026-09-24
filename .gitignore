@@ -1,0 +1,19 @@
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+
+# 打包产物：用 GitHub Releases 分发，不提交进仓库
+*.zip
+*.crx
+*.pem
+
+# 日志与临时文件
+*.log
+_verify_tmp/

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "XPath AI 助手",
+  "version": "0.7.1",
+  "description": "XPath AI 助手：点选元素生成 XPath、校验唯一性，并可用 AI 对话生成与修正",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "打开 XPath AI 助手",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
