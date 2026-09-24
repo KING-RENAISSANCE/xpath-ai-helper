@@ -334,8 +334,10 @@ AI 请求在 Service Worker 里发出，调试时要到扩展管理页点「Serv
 只打包扩展运行需要的文件，不要把 `docs/` 打进去：
 
 ```bash
-zip -r XPath插件.zip manifest.json background.js content.js icons -x "*.DS_Store"
+zip -r xpath-ai-helper-v0.7.1.zip manifest.json background.js content.js icons LICENSE -x "*.DS_Store"
 ```
+
+> 建议用纯 ASCII 文件名。中文名上传到 GitHub Release 后会被替换成点号 —— 实测 `XPath插件-0.7.1.zip` 会变成 `XPath.-0.7.1.zip`，文件内容不受影响，但包名会变得很难看。
 
 ---
 
